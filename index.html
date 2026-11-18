@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Lorem Ipsum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de herramientas -->
+  <div class="toolbar no-print">
+    <label class="tool" title="Cambiar color principal">
+      🎨 <input type="color" id="accentPicker" value="#cc0000">
+    </label>
+    <button class="tool" id="themeToggle" title="Modo oscuro / claro">🌙</button>
+    <button class="tool" id="printBtn" title="Imprimir / Guardar PDF">🖨️ PDF</button>
+  </div>
+
+  <main class="cv" id="cv">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <section class="main-col">
+
+      <header class="profile reveal">
+        <div class="avatar"><img src="i.png" alt="IO" width="150px" height="170px">
+        </div>
+
+        <div class="profile-info">
+          <h1 id="name" data-text="PARIS RANDALF, CCACHO MAMANI"></h1>
+          <p class="role" id="role" data-text="Tecnico"></p>
+          <p class="location">📍 PUNO, PERU</p>
+          <a href="mailto:lorem.ipsum@dolor.com" class="mail">parisrandalf7@gmail.com</a>
+          <hr class="line">
+          <p class="bio"> Practicante con estudios en el área de computacion, orientao al aprendizaje continuo. Busco aportar mis conocimientos en el area de telecomunicacioes y contribuir al crecimiento del equipo. </p>
+        </div>
+      </header>
+
+      <!-- EDUCACIÓN -->
+      <section class="block reveal">
+        <h2>EDUCACION</h2>
+        <div class="timeline">
+          <article class="item">
+            <div class="when"><strong>I.E.S.T.P. - SANTA LUCIA</strong><span>2024-2026</span></div>
+            <div class="what"><h3>COMPUTACION</h3><p>Estudios sobre mantenimiento, reparacion y optimizacion de software y hardware, produccion audiovisual, diseño grafico, desarrollo de paginas web, infraestructura de redes </p></div>
+          </article>
+        </div>
+      </section>
+
+      <hr class="line short">
+
+      <!-- EXPERIENCIA -->
+      <section class="block reveal">
+        <h2>EXPERIENCIA</h2>
+        <div class="timeline">
+          <article class="item">
+            <div class="when"><strong>I.E.S.T.P. - SANTA LUCIA</strong><span>2026/9-2026/11</span></div>
+            <div class="what"><h3>Practicas PreProfecionales</h3><p> Desarrollo de documentos en word, prompts avanzados en Excel, diseño grafico en PowerPoint, modelado 3D y diseño de planos en Autocad. </p></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- HABILIDADES -->
+      <section class="skills-row reveal">
+        <div class="skills-col">
+          <h2 class="small">HABILIDADES PROFESIONALES</h2>
+          <div class="bar-list">
+            <div class="bar" data-level="85"><span>Ofimatica</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="65"><span>Mantenimiento</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="50"><span>Programacion</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="90"><span>Modelado 3D</span><div class="track"><i></i></div><em>0%</em></div>
+          </div>
+        </div>
+        <div class="skills-col">
+          <h2 class="small">HABILIDADES PERSONALES</h2>
+          <div class="bar-list">
+            <div class="bar" data-level="80"><span>Trabajo en Equipo</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="60"><span>Paciencia</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="70"><span>Honestidad</span><div class="track"><i></i></div><em>0%</em></div>
+            <div class="bar" data-level="95"><span>Prudencia</span><div class="track"><i></i></div><em>0%</em></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- COLUMNA DERECHA -->
+    <aside class="side-col">
+
+      <section class="side-block reveal">
+        <h2>SOBRE MI</h2>
+        <p>Soy una persona responsable, trabajadora y con ganas de aprender. Me gusta trabajar en equipo y busco una oportunidad para crecer profesionalmente.</p>
+      </section>
+
+      <section class="side-block curve reveal">
+        <h2>CONTACTOS</h2>
+        <ul class="contact">
+          <li><a href="tel: +51 962984840"><span class="ico">📞</span>+51 962984840</a></li>
+          <li><a href="https://github.com/MRandalf" target="_blank" rel="noopener"><span class="ico">🌐</span>https://github.com/MRandalf</a></li>
+        </ul>
+        <button class="copy-btn no-print" id="copyMail">Copiar vinculo</button>
+      </section>
+
+      <section class="side-block curve reveal">
+        <h2>HABILIDADES</h2>
+        <div class="bar-list light">
+          <div class="bar" data-level="80"><span>Redaccion de Documentos</span><div class="track"><i></i></div></div>
+          <div class="bar" data-level="55"><span>Resolucion de Problemas</span><div class="track"><i></i></div></div>
+          <div class="bar" data-level="45"><span>Aprendizaje Continuo</span><div class="track"><i></i></div></div>
+        </div>
+      </section>
+
+      <section class="side-block curve reveal">
+        <h2>LANGUAGES</h2>
+        <div class="langs">
+          <div class="lang" data-level="3"><span>INGLES</span><div class="squares"></div></div>
+          <div class="lang" data-level="5"><span>ESPAÑOL</span><div class="squares"></div></div>
+          <div class="lang" data-level="3"><span>ITALIANO</span><div class="squares"></div></div>
+        </div>
+
+      </section>
+    </aside>
+  </main>
+
+  <div class="toast" id="toast">¡Copiado!</div>
+  <script src="script.js"></script>
+</body>
+</html>
